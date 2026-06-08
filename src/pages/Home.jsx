@@ -13,15 +13,15 @@ const stack = [
   { label: 'Node.js', color: '#68a063' },
   { label: 'Java', color: '#3776ab' },
   { label: 'JavaScript', color: '#f7df1e' },
-  { label: 'HTML/CSS', color: '#e34c26' },
+  { label: 'MySQL', color: '#e34c26' },
   { label: 'Git', color: '#f05032' },
 ];
 
 const hardSkills = [
   { label: 'React / Next.js', percent: 90 },
   { label: 'Node.js / Express', percent: 80 },
-  { label: 'Python / Django', percent: 80 },
-  { label: 'Bases de datos', percent: 60 },
+  { label: 'Java / Spring Boot', percent: 80 },
+  { label: 'MySQL', percent: 60 },
   { label: 'DevOps / Docker', percent: 50 },
 ];
 
@@ -81,9 +81,8 @@ export default function Home() {
               robustas con Node.js. Siempre buscando aprender y colaborar.
             </p>
             <div className={styles.stats}>
-              <div><p className={styles.statNum}>3+</p><p className={styles.statLabel}>años experiencia</p></div>
-              <div><p className={styles.statNum} style={{ color: 'var(--accent2)' }}>15+</p><p className={styles.statLabel}>proyectos</p></div>
-              <div><p className={styles.statNum} style={{ color: 'var(--accent3)' }}>8+</p><p className={styles.statLabel}>clientes</p></div>
+              <div><p className={styles.statNum}>NOT NULL</p><p className={styles.statLabel}>años experiencia</p></div>
+              <div><p className={styles.statNum} style={{ color: 'var(--accent2)' }}>1+</p><p className={styles.statLabel}>proyectos</p></div>
             </div>
           </div>
 
@@ -101,18 +100,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── PROYECTOS DESTACADOS ──────────────── */}
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>Proyectos destacados</h2>
-        <div className={styles.projectsGrid}>
-          {projects.slice(0, 3).map(p => (
-            <ProjectCard key={p.id} project={p} />
-          ))}
-        </div>
-        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-          <Link to="/proyectos" className={styles.btnSecondary}>Ver todos los proyectos →</Link>
-        </div>
-      </section>
+
 
       {/* ── HABILIDADES ──────────────────────── */}
       <section className={styles.section}>

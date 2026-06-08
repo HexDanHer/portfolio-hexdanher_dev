@@ -2,12 +2,12 @@
 const projects = [
   {
     id: 1,
-    name: 'App de tareas',
+    name: 'Gestor de profesores de universidad',
     description: 'Gestión de tareas colaborativa con autenticación, drag & drop, notificaciones y sincronización en tiempo real.',
-    tags: ['React', 'Firebase', 'Tailwind'],
+    tags: ['React', 'Node.js', 'MySQL'],
     category: 'fullstack',
-    demoUrl: 'https://demo.ejemplo.com',
-    githubUrl: 'https://github.com/hexdanher',
+    demoUrl: 'https://projectuniversity-med-web.vercel.app/',
+    githubUrl: 'https://github.com/HexDanHer/gestor-profesores',
   },
   {
     id: 2,
